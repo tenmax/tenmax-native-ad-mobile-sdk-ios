@@ -7,7 +7,6 @@
 
 @implementation AdLinkDto
 
-
 - (instancetype) initWithUrl:(NSString*) url clickTrackers:(NSArray<NSString*>*) clickTrackers {
   self = [super init];
   if (self) {

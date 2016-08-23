@@ -5,7 +5,16 @@
 
 #import "OysterAdImage.h"
 
-@implementation OysterAdImage {
+@implementation OysterAdImage
 
+- (instancetype) initWithImage:(UIImage*) image imageURL:(NSString*) imageURL {
+  self = [super init];
+  if (self) {
+    _image = image;
+    _imageURL = imageURL;
+  }
+
+  return self;
 }
+
 @end

@@ -15,10 +15,12 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability-completeness"
+
 - (instancetype) initWithAdUnitID:(NSString*) adUnitID
                rootViewController:(UIViewController* __nullable) rootViewController
                           adTypes:(NSArray*) adTypes
                           options:(NSArray* __nullable) options;
+
 #pragma clang diagnostic pop
 
 - (void) loadRequest;

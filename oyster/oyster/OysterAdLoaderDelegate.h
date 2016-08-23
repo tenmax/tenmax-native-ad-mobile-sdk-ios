@@ -10,6 +10,6 @@
 @protocol OysterAdLoaderDelegate<NSObject>
 
 /// Called when adLoader fails to load an ad.
-- (void)adLoader:(OysterAdLoader *)adLoader didFailToReceiveAdWithError:(NSError *)error;
+- (void) adLoader:(OysterAdLoader*) adLoader didFailToReceiveAdWithError:(NSError*) error;
 
 @end

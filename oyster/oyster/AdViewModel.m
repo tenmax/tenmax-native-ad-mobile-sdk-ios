@@ -6,6 +6,7 @@
 #import "AdViewModel.h"
 #import "OysterAdImage.h"
 #import "AdImage.h"
+#import "OysterContentAd.h"
 
 @implementation AdViewModel
 
@@ -24,12 +25,26 @@
     _link = link;
     _sponsor = sponsor;
     _icon = icon;
-    _image = image;
+    _adImage = image;
     _impressionEvents = impressionEvents;
     _viewEvents = viewEvents;
   }
 
   return self;
+}
+
+- (OysterContentAd*) createFormatOysterContentAd {
+  OysterContentAd* oysterContentAd = [[OysterContentAd alloc] init];
+  [oysterContentAd setValue:self.title forKey:NSStringFromSelector(@selector(headline))];
+  [oysterContentAd setValue:self.summary forKey:NSStringFromSelector(@selector(body))];
+  [oysterContentAd setValue:[[OysterAdImage alloc] initWithImage:self.adImage.image imageURL:self.adImage.url]
+                     forKey:NSStringFromSelector(@selector(adImage))];
+  [oysterContentAd setValue:[[OysterAdImage alloc] initWithImage:self.icon.image imageURL:self.icon.url]
+                     forKey:NSStringFromSelector(@selector(adLogo))];
+  [oysterContentAd setValue:self.sponsor forKey:NSStringFromSelector(@selector(advertiser))];
+  [oysterContentAd setValue:self.viewEvents forKey:NSStringFromSelector(@selector(viewEvents))];
+  [oysterContentAd setValue:self.link forKey:NSStringFromSelector(@selector(link))];
+  return oysterContentAd;
 }
 
 @end

@@ -43,16 +43,16 @@
   return self;
 }
 
-- (void) createAdViewModel:(AdDto*) adDto {
-  AdViewModel* viewModel = [[AdViewModel alloc]
-      initWithTitle:adDto.title
-            summary:adDto.summary
-               link:adDto.link.url
-            sponsor:adDto.sponsor.title
-               icon:[[AdImage alloc] initWithUrl:adDto.middleIcon.url]
-              image:[[AdImage alloc] initWithUrl:adDto.middleImage.url]
-   impressionEvents:adDto.impressionEvents
-         viewEvents:adDto.viewEvents];
+- (AdViewModel*) createAdViewModel {
+  return [[AdViewModel alloc]
+      initWithTitle:self.title
+            summary:self.summary
+               link:self.link.url
+            sponsor:self.sponsor.title
+               icon:[[AdImage alloc] initWithUrl:self.middleIcon.url]
+              image:[[AdImage alloc] initWithUrl:self.middleImage.url]
+   impressionEvents:self.impressionEvents
+         viewEvents:self.viewEvents];
 
 }
 

@@ -8,7 +8,9 @@
 
 @interface OysterAdImage : NSObject
 
-@property(nonatomic, readonly, strong) UIImage *image;
-@property(nonatomic, readonly, strong) NSURL *imageURL;
+@property (nonatomic, readonly, strong) UIImage* image;
+@property (nonatomic, readonly, strong) NSString* imageURL;
+
+- (instancetype) initWithImage:(UIImage*) image imageURL:(NSString*) imageURL;
 
 @end

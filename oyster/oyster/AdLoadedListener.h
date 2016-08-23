@@ -5,9 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class AdViewModel;
+
 @protocol AdLoadedListener<NSObject>
 
 - (void) onAdFailedToLoad:(NSError*) error;
-- (void) onSuccess;
+
+- (void) onSuccess:(AdViewModel*) adViewModel;
 
 @end

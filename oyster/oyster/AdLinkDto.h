@@ -6,8 +6,8 @@
 #import <Foundation/Foundation.h>
 
 @interface AdLinkDto : NSObject
-@property (nonatomic, readonly, strong) NSString *url;
-@property (nonatomic, readonly, strong) NSArray<NSString*> *clickTrackers;
+@property (nonatomic, readonly, strong) NSString* url;
+@property (nonatomic, readonly, strong) NSArray<NSString*>* clickTrackers;
 
 - (instancetype) initWithUrl:(NSString*) url clickTrackers:(NSArray<NSString*>*) clickTrackers;
 

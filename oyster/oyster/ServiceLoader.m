@@ -50,9 +50,10 @@
     if (!error && [data length] > 0) {
       AdDto* adDto = [self getReceivedData:data];
       if (adDto) {
-        //[self.contentAdLoadedListener onSuccess];
-        //#TODO onSuccess
         [self impressionEventCallback:adDto];
+        dispatch_async(dispatch_get_main_queue(), ^{
+          [self.contentAdLoadedListener onSuccess:[adDto createAdViewModel]];
+        });
       }
     } else {
       [self.contentAdLoadedListener onAdFailedToLoad:error];

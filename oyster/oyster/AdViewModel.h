@@ -7,17 +7,18 @@
 
 @class OysterAdImage;
 @class AdImage;
+@class OysterContentAd;
 
 @interface AdViewModel : NSObject
 
-@property (nonatomic, readonly, strong) NSString*  title;
-@property (nonatomic, readonly, strong) NSString*  summary;
-@property (nonatomic, readonly, strong) NSString*  link;
-@property (nonatomic, readonly, strong) NSString*  sponsor;
-@property (nonatomic, readonly, strong) AdImage*  icon;
-@property (nonatomic, readonly, strong) AdImage*  image;
-@property (nonatomic, readonly, strong) NSArray<NSString*>*  impressionEvents;
-@property (nonatomic, readonly, strong) NSArray<NSString*>*  viewEvents;
+@property (nonatomic, readonly, strong) NSString* title;
+@property (nonatomic, readonly, strong) NSString* summary;
+@property (nonatomic, readonly, strong) NSString* link;
+@property (nonatomic, readonly, strong) NSString* sponsor;
+@property (nonatomic, readonly, strong) AdImage* icon;
+@property (nonatomic, readonly, strong) AdImage* adImage;
+@property (nonatomic, readonly, strong) NSArray<NSString*>* impressionEvents;
+@property (nonatomic, readonly, strong) NSArray<NSString*>* viewEvents;
 
 - (instancetype) initWithTitle:(NSString*) title
                        summary:(NSString*) summary
@@ -28,4 +29,5 @@
               impressionEvents:(NSArray<NSString*>*) impressionEvents
                     viewEvents:(NSArray<NSString*>*) viewEvents;
 
+- (OysterContentAd*) createFormatOysterContentAd;
 @end

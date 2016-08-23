@@ -5,4 +5,4 @@
 
 #import <Foundation/Foundation.h>
 
-__attribute__((visibility("default"))) static NSString *const kOysterAdLoaderAdTypeContent = @"kOysterAdLoaderAdTypeContent";
+__attribute__((visibility("default"))) static NSString* const kOysterAdLoaderAdTypeContent = @"kOysterAdLoaderAdTypeContent";

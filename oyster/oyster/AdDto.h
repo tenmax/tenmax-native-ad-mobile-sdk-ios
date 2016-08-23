@@ -8,20 +8,21 @@
 @class AdLinkDto;
 @class AdImageDto;
 @class AdSponsorDto;
+@class AdViewModel;
 
 @interface AdDto : NSObject
-@property (nonatomic, readonly, strong) NSString *title;
-@property (nonatomic, readonly, strong) NSString *summary;
-@property (nonatomic, readonly, strong) AdLinkDto *link;
-@property (nonatomic, readonly, strong) AdImageDto *middleIcon;
-@property (nonatomic, readonly, strong) AdImageDto *middleImage;
-@property (nonatomic, readonly, strong) AdSponsorDto *sponsor;
-@property (nonatomic, readonly, strong) AdImageDto *largeImage;
-@property (nonatomic, readonly, strong) AdImageDto *smallImage;
-@property (nonatomic, readonly, strong) AdImageDto *largeIcon;
-@property (nonatomic, readonly, strong) AdImageDto *smallIcon;
-@property (nonatomic, readonly, strong) NSArray<NSString *> *impressionEvents;
-@property (nonatomic, readonly, strong) NSArray<NSString *> *viewEvents;
+@property (nonatomic, readonly, strong) NSString* title;
+@property (nonatomic, readonly, strong) NSString* summary;
+@property (nonatomic, readonly, strong) AdLinkDto* link;
+@property (nonatomic, readonly, strong) AdImageDto* middleIcon;
+@property (nonatomic, readonly, strong) AdImageDto* middleImage;
+@property (nonatomic, readonly, strong) AdSponsorDto* sponsor;
+@property (nonatomic, readonly, strong) AdImageDto* largeImage;
+@property (nonatomic, readonly, strong) AdImageDto* smallImage;
+@property (nonatomic, readonly, strong) AdImageDto* largeIcon;
+@property (nonatomic, readonly, strong) AdImageDto* smallIcon;
+@property (nonatomic, readonly, strong) NSArray<NSString*>* impressionEvents;
+@property (nonatomic, readonly, strong) NSArray<NSString*>* viewEvents;
 
 - (instancetype) initWithTitle:(NSString*) title
                        summary:(NSString*) summary
@@ -35,5 +36,7 @@
                      smallIcon:(AdImageDto*) smallIcon
               impressionEvents:(NSArray<NSString*>*) impressionEvents
                     viewEvents:(NSArray<NSString*>*) viewEvents;
+
+- (AdViewModel*) createAdViewModel;
 
 @end

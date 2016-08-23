@@ -8,8 +8,8 @@
 @class AdLinkDto;
 
 @interface AdSponsorDto : NSObject
-@property (nonatomic, readonly, strong) AdLinkDto *link;
-@property (nonatomic, readonly, strong) NSString *title;
+@property (nonatomic, readonly, strong) AdLinkDto* link;
+@property (nonatomic, readonly, strong) NSString* title;
 
 - (instancetype) initWithLink:(AdLinkDto*) link title:(NSString*) title;
 

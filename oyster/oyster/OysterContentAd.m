@@ -4,10 +4,12 @@
 //
 
 #import "OysterContentAd.h"
-#import "OysterAdImage.h"
-#import "OysterAdLoader.h"
 
-@implementation OysterContentAd {
+@interface OysterContentAd()
+@property (nonatomic, readonly, strong) NSArray<NSString*>* viewEvents;
+@property (nonatomic, readonly, strong) NSString* link;
+@end
 
-}
+@implementation OysterContentAd
+
 @end

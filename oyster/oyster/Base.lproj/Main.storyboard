@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-Sm-PhZ">
+                                <rect key="frame" x="20" y="20" width="560" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="xxD-sk-C3D"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EE-gp-5Se">
+                                <rect key="frame" x="234" y="404" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Up9-dI-Jeh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GE6-Sm-PhZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6nW-oL-5pn"/>
+                            <constraint firstItem="GE6-Sm-PhZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="J4M-1m-Hl7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GE6-Sm-PhZ" secondAttribute="trailing" id="aP0-gj-krO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nativeAdPlaceholder" destination="GE6-Sm-PhZ" id="WNf-xK-YFz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="543" y="265"/>
         </scene>
     </scenes>
 </document>

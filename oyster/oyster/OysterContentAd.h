@@ -11,6 +11,7 @@
 @class OysterAdLoader;
 
 @interface OysterContentAd : OysterAd
+
 #pragma mark - Must be displayed
 
 @property (nonatomic, readonly, copy) NSString* headline;
@@ -18,9 +19,8 @@
 
 #pragma mark - Recommended to display
 
-@property (nonatomic, readonly, copy) NSArray* images;
-@property (nonatomic, readonly, strong) OysterAdImage* logo;
-@property (nonatomic, readonly, copy) NSString* callToAction;
+@property (nonatomic, readonly, strong) OysterAdImage* adImage;
+@property (nonatomic, readonly, strong) OysterAdImage* adLogo;
 @property (nonatomic, readonly, copy) NSString* advertiser;
 @end
 

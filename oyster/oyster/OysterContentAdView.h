@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "OysterAd.h"
 
+@class OysterContentAd;
+
 @interface OysterContentAdView : UIView
 
+@property (nonatomic, strong) OysterContentAd* oysterContentAd;
 
-@property(nonatomic, strong) OysterContentAdView *nativeContentAd;
-
-@property(nonatomic, weak) IBOutlet UIView *headlineView;
-@property(nonatomic, weak) IBOutlet UIView *bodyView;
-@property(nonatomic, weak) IBOutlet UIView *imageView;
-@property(nonatomic, weak) IBOutlet UIView *logoView;
-@property(nonatomic, weak) IBOutlet UIView *callToActionView;
-@property(nonatomic, weak) IBOutlet UIView *advertiserView;
+@property (nonatomic, weak) IBOutlet UIView* headlineView;
+@property (nonatomic, weak) IBOutlet UIView* bodyView;
+@property (nonatomic, weak) IBOutlet UIView* imageView;
+@property (nonatomic, weak) IBOutlet UIView* logoView;
+@property (nonatomic, weak) IBOutlet UIView* advertiserView;
 
 @end

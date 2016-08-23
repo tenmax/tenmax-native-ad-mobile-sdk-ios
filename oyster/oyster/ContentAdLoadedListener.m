@@ -6,6 +6,7 @@
 #import "ContentAdLoadedListener.h"
 #import "OysterContentAd.h"
 #import "OysterAdLoader.h"
+#import "AdViewModel.h"
 
 @interface ContentAdLoadedListener()
 
@@ -29,8 +30,8 @@
   [self.delegate adLoader:self.adLoader didFailToReceiveAdWithError:error];
 }
 
-- (void) onSuccess {
-  [self.delegate adLoader:self.adLoader didReceiveNativeContentAd:nil];
+- (void) onSuccess:(AdViewModel*) adViewModel {
+  [self.delegate adLoader:self.adLoader didReceiveNativeContentAd:[adViewModel createFormatOysterContentAd]];
 }
 
 @end

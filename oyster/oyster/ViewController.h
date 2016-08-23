@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *nativeAdPlaceholder;
+- (IBAction)clickBtn:(id)sender;
 
 @end
 
