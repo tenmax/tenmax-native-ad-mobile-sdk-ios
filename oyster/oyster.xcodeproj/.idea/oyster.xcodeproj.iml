@@ -12,7 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdImage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAd.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdImage.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAd.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdView.m" isTestSource="false" />
@@ -23,7 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdType.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoader.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImage.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/AppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoaderDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLinkDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdSponsorDto.m" isTestSource="false" />
@@ -31,7 +32,6 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdSponsorDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/NativeContentAdView.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImageDto.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImageDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ViewController.m" isTestSource="false" />

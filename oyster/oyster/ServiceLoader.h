@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "OysterAdLoader.h"
 
 @class ContentAdLoadedListener;
 @class OysterAdLoaderOptions;

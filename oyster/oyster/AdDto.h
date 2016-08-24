@@ -9,6 +9,7 @@
 @class AdImageDto;
 @class AdSponsorDto;
 @class AdViewModel;
+@class OysterAdLoaderOptions;
 
 @interface AdDto : NSObject
 @property (nonatomic, readonly, strong) NSString* title;
@@ -37,6 +38,6 @@
               impressionEvents:(NSArray<NSString*>*) impressionEvents
                     viewEvents:(NSArray<NSString*>*) viewEvents;
 
-- (AdViewModel*) createAdViewModel;
+- (AdViewModel*) createAdViewModel:(OysterAdLoaderOptions*) options;
 
 @end

@@ -9,6 +9,7 @@
 #import "AdSponsorDto.h"
 #import "AdViewModel.h"
 #import "AdImage.h"
+#import "OysterAdLoader.h"
 
 @implementation AdDto
 
@@ -43,14 +44,32 @@
   return self;
 }
 
-- (AdViewModel*) createAdViewModel {
+- (AdViewModel*) createAdViewModel:(OysterAdLoaderOptions*) options {
+  NSString* imageUrl = self.middleImage.url;
+  NSString* iconUrl = self.middleIcon.url;
+  if (options) {
+    switch (options.imageSize) {
+      case LARGE:
+        imageUrl = self.largeImage.url;
+        iconUrl = self.largeIcon.url;
+        break;
+      case MIDDLE:
+        imageUrl = self.middleImage.url;
+        iconUrl = self.middleIcon.url;
+        break;
+      case SMALL:
+        imageUrl = self.smallImage.url;
+        iconUrl = self.smallIcon.url;
+        break;
+    }
+  }
   return [[AdViewModel alloc]
       initWithTitle:self.title
             summary:self.summary
                link:self.link.url
             sponsor:self.sponsor.title
-               icon:[[AdImage alloc] initWithUrl:self.middleIcon.url]
-              image:[[AdImage alloc] initWithUrl:self.middleImage.url]
+               icon:[[AdImage alloc] initWithUrl:iconUrl]
+              image:[[AdImage alloc] initWithUrl:imageUrl]
    impressionEvents:self.impressionEvents
          viewEvents:self.viewEvents];
 

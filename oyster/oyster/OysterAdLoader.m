@@ -28,7 +28,7 @@
   _adUnitID = adUnitID;
   _rootViewController = rootViewController;
   _adTypes = [adTypes copy];
-  _options = [options copy];
+    _options = options;
 
   _serviceLoader = [[ServiceLoader alloc] initWithAdUnitID:adUnitID options:options];
 
@@ -56,5 +56,9 @@
 
   [self.serviceLoader loadAd];
 }
+
+@end
+
+@implementation OysterAdLoaderOptions
 
 @end

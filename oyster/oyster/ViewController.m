@@ -34,7 +34,7 @@
   options.imageSize = MIDDLE;
 
   self.adLoader = [[OysterAdLoader alloc]
-      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:options.imageSize];
+      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:options];
 
   self.adLoader.delegate = self;
   [self.adLoader loadRequest];
@@ -60,9 +60,9 @@
 
   ((UILabel*) oysterContentAdView.headlineView).text = oysterContentAd.headline;
   ((UILabel*) oysterContentAdView.bodyView).text = oysterContentAd.headline;
+  ((UILabel*) oysterContentAdView.advertiserView).text = oysterContentAd.advertiser;
   ((UIImageView*) oysterContentAdView.imageView).image = oysterContentAd.adImage.image;
   ((UIImageView*) oysterContentAdView.logoView).image = oysterContentAd.adLogo.image;
-  ((UILabel*) oysterContentAdView.advertiserView).text = oysterContentAd.advertiser;
 
 }
 

@@ -9,7 +9,8 @@
 #import "AdLinkDto.h"
 #import "AdDto.h"
 #import "AdSponsorDto.h"
-#import "OysterAdLoader.h"
+#import "AdViewModel.h"
+#import "AdImage.h"
 
 @interface ServiceLoader()
 @property (nonatomic, readonly, strong) NSString* adUnitID;
@@ -54,20 +55,24 @@
       AdDto* adDto = [self getReceivedData:data];
       if (adDto) {
         [self impressionEventCallback:adDto];
-
+        AdViewModel* model = [adDto createAdViewModel:self.options];
         if (self.options.imageSize) {
-          dispatch_async(dispatch_get_main_queue(), ^{
-            [self.contentAdLoadedListener onSuccess:[adDto createAdViewModel]];
-          });
-        } else {
-          //load UIImage by url
+          model.adImage.image = [self getImageWithUrl:model.adImage.url];
+          model.icon.image = [self getImageWithUrl:model.icon.url];
         }
+        dispatch_async(dispatch_get_main_queue(), ^{
+          [self.contentAdLoadedListener onSuccess:model];
+        });
 
       }
     } else {
       [self.contentAdLoadedListener onAdFailedToLoad:error];
     }
   }] resume];
+}
+
+- (UIImage*) getImageWithUrl:(NSString*) url {
+  return [UIImage imageWithData:[[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]]];
 }
 
 - (void) impressionEventCallback:(AdDto*) adDto {
