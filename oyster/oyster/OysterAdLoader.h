@@ -7,6 +7,13 @@
 #import <UIKit/UIKit.h>
 
 @protocol OysterAdLoaderDelegate;
+@class OysterAdLoaderOptions;
+
+typedef enum OysterImageSizeType {
+    LARGE,
+    MIDDLE,
+    SMALL
+} OysterImageSize;
 
 @interface OysterAdLoader : NSObject
 
@@ -19,7 +26,7 @@
 - (instancetype) initWithAdUnitID:(NSString*) adUnitID
                rootViewController:(UIViewController* __nullable) rootViewController
                           adTypes:(NSArray*) adTypes
-                          options:(NSArray* __nullable) options;
+                          options:(OysterAdLoaderOptions *) options;
 
 #pragma clang diagnostic pop
 
@@ -27,4 +34,9 @@
 @end
 
 @interface OysterAdLoaderOptions : NSObject
+
+@property (nonatomic, readwrite, assign) OysterImageSize imageSize;
+
 @end
+
+

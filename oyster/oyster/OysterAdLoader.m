@@ -13,7 +13,7 @@
 @interface OysterAdLoader()
 @property (nonatomic, readonly, assign) UIViewController* rootViewController;
 @property (nonatomic, readonly, strong) NSArray* adTypes;
-@property (nonatomic, readonly, strong) NSArray* options;
+@property (nonatomic, readonly, strong) OysterAdLoaderOptions* options;
 @property (nonatomic, readonly, strong) ServiceLoader* serviceLoader;
 
 @end
@@ -23,14 +23,14 @@
 - (instancetype) initWithAdUnitID:(NSString*) adUnitID
                rootViewController:(UIViewController* __nullable) rootViewController
                           adTypes:(NSArray*) adTypes
-                          options:(NSArray* __nullable) options {
+                          options:(OysterAdLoaderOptions*) options {
 
   _adUnitID = adUnitID;
   _rootViewController = rootViewController;
   _adTypes = [adTypes copy];
   _options = [options copy];
 
-  _serviceLoader = [[ServiceLoader alloc] initWithAdUnitID:adUnitID];
+  _serviceLoader = [[ServiceLoader alloc] initWithAdUnitID:adUnitID options:options];
 
   return self;
 }

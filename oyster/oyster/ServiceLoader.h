@@ -7,12 +7,13 @@
 #import <UIKit/UIKit.h>
 
 @class ContentAdLoadedListener;
+@class OysterAdLoaderOptions;
 
 @interface ServiceLoader : NSObject
 
 @property (nonatomic, readwrite, strong) ContentAdLoadedListener* contentAdLoadedListener;
 
-- (instancetype) initWithAdUnitID:(NSString*) adUnitID;
+- (instancetype) initWithAdUnitID:(NSString*) adUnitID options:(OysterAdLoaderOptions*) options;
 
 - (void) loadAd;
 @end

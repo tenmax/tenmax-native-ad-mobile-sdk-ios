@@ -9,17 +9,20 @@
 #import "AdLinkDto.h"
 #import "AdDto.h"
 #import "AdSponsorDto.h"
+#import "OysterAdLoader.h"
 
 @interface ServiceLoader()
 @property (nonatomic, readonly, strong) NSString* adUnitID;
+@property (nonatomic, readonly, strong) OysterAdLoaderOptions* options;
 @end
 
 @implementation ServiceLoader
 
-- (instancetype) initWithAdUnitID:(NSString*) adUnitID {
+- (instancetype) initWithAdUnitID:(NSString*) adUnitID options:(OysterAdLoaderOptions*) options {
   self = [super init];
   if (self) {
     _adUnitID = adUnitID;
+    _options = options;
   }
 
   return self;
@@ -51,9 +54,15 @@
       AdDto* adDto = [self getReceivedData:data];
       if (adDto) {
         [self impressionEventCallback:adDto];
-        dispatch_async(dispatch_get_main_queue(), ^{
-          [self.contentAdLoadedListener onSuccess:[adDto createAdViewModel]];
-        });
+
+        if (self.options.imageSize) {
+          dispatch_async(dispatch_get_main_queue(), ^{
+            [self.contentAdLoadedListener onSuccess:[adDto createAdViewModel]];
+          });
+        } else {
+          //load UIImage by url
+        }
+
       }
     } else {
       [self.contentAdLoadedListener onAdFailedToLoad:error];

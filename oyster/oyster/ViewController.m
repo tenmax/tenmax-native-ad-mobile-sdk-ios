@@ -30,8 +30,11 @@
   NSMutableArray* adType = [NSMutableArray array];
   [adType addObject:kOysterAdLoaderAdTypeContent];
 
+  OysterAdLoaderOptions* options = [[OysterAdLoaderOptions alloc] init];
+  options.imageSize = MIDDLE;
+
   self.adLoader = [[OysterAdLoader alloc]
-      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:nil];
+      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:options.imageSize];
 
   self.adLoader.delegate = self;
   [self.adLoader loadRequest];
