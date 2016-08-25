@@ -2,13 +2,14 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/..">
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLoadedListener.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/CollectionViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ServiceLoader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ContentAdLoadedListener.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdViewModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ContentAdLoadedListener.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/ServiceLoader.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdImage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAd.m" isTestSource="false" />
@@ -16,10 +17,10 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAd.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdView.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLinkDto.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/CollectionViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdDto.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdView.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoader.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLoadedListener.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdType.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoader.h" isTestSource="false" />
@@ -28,10 +29,13 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoaderDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLinkDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdSponsorDto.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/AdLinkDto.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdSponsorDto.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/NativeContentAdView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImageDto.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdImageDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ViewController.m" isTestSource="false" />
@@ -39,7 +43,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAd.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/ServiceLoader.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterAdLoader.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AdViewModel.m" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

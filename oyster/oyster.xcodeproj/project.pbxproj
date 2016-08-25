@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A29409F062864C397A8C7F0 /* AdLinkDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294EE00E5BD9C2C3381EA9 /* AdLinkDto.m */; };
 		1A2940EA87B18165F0706554 /* AdDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A29498FF48BB6F830EB19C5 /* AdDto.m */; };
+		1A294302F589699D797A3D21 /* OysterContentAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */; };
 		1A29442DE4F9FA7E38B9925F /* OysterAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294E3933D9A13CBFE2C46D /* OysterAdLoader.m */; };
 		1A2945087EA121E7581C27C8 /* AdImageDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294360632D4A07D4200953 /* AdImageDto.m */; };
 		1A2946D7A3130F96A8652FCD /* AdSponsorDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294A9D23A94F0AD22BD32F /* AdSponsorDto.m */; };
@@ -18,6 +19,7 @@
 		1A2948D8BDCCD2A190E7FD69 /* AdViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A29404157F311FABF8C3536 /* AdViewModel.m */; };
 		1A2949DAA6B0C5959D4024D7 /* ContentAdLoadedListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2945C400E9214771956199 /* ContentAdLoadedListener.m */; };
 		1A294BA9140593F3A4994CF4 /* ServiceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2940A534AAD64B52D2F6F6 /* ServiceLoader.m */; };
+		1A294CB43949A7BDE4621B50 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294DE99C495A7B000D3758 /* CollectionViewController.m */; };
 		4A14EFD01D66F7AB004781A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFCF1D66F7AB004781A4 /* main.m */; };
 		4A14EFD31D66F7AB004781A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFD21D66F7AB004781A4 /* AppDelegate.m */; };
 		4A14EFD61D66F7AB004781A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFD51D66F7AB004781A4 /* ViewController.m */; };
@@ -42,15 +44,19 @@
 		1A29472A42629D039962DCFD /* AdDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDto.h; sourceTree = "<group>"; };
 		1A2947C0F201DAB1621DFE22 /* AdImageDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImageDto.h; sourceTree = "<group>"; };
 		1A2947D2558666A042B4100E /* AdImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdImage.m; sourceTree = "<group>"; };
+		1A2947DBD98990469029E4D6 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		1A29489B05E0CE176653116A /* OysterAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterAdType.h; sourceTree = "<group>"; };
 		1A294905572BB7BE4999A559 /* OysterAdImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterAdImage.m; sourceTree = "<group>"; };
 		1A29490B9C18223542CC384F /* OysterContentAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterContentAd.m; sourceTree = "<group>"; };
 		1A2949239BCBAFFB3108BE6E /* OysterAdLoaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterAdLoaderDelegate.h; sourceTree = "<group>"; };
+		1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterContentAdCell.m; sourceTree = "<group>"; };
 		1A29498FF48BB6F830EB19C5 /* AdDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDto.m; sourceTree = "<group>"; };
 		1A2949BC0DAB67DEDABADCF6 /* AdViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewModel.h; sourceTree = "<group>"; };
 		1A294A9D23A94F0AD22BD32F /* AdSponsorDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSponsorDto.m; sourceTree = "<group>"; };
+		1A294BAC8A41CC3B8AAB28BD /* OysterContentAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterContentAdCell.h; sourceTree = "<group>"; };
 		1A294CA07749390B7CFCE63B /* AdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImage.h; sourceTree = "<group>"; };
 		1A294DBB2CF09AF9A1C54F98 /* ServiceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLoader.h; sourceTree = "<group>"; };
+		1A294DE99C495A7B000D3758 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		1A294E3933D9A13CBFE2C46D /* OysterAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterAdLoader.m; sourceTree = "<group>"; };
 		1A294EA044143C6CCE980F5F /* ContentAdLoadedListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentAdLoadedListener.h; sourceTree = "<group>"; };
 		1A294ECCE9DEA72AD7F9E37F /* AdLinkDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdLinkDto.h; sourceTree = "<group>"; };
@@ -137,6 +143,10 @@
 				4A14EFCE1D66F7AB004781A4 /* Supporting Files */,
 				1A2947D2558666A042B4100E /* AdImage.m */,
 				1A294CA07749390B7CFCE63B /* AdImage.h */,
+				1A294DE99C495A7B000D3758 /* CollectionViewController.m */,
+				1A2947DBD98990469029E4D6 /* CollectionViewController.h */,
+				1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */,
+				1A294BAC8A41CC3B8AAB28BD /* OysterContentAdCell.h */,
 			);
 			path = oyster;
 			sourceTree = "<group>";
@@ -195,6 +205,9 @@
 		4A14EFC31D66F7AB004781A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					100,
+				);
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = tenmax;
 				TargetAttributes = {
@@ -256,6 +269,8 @@
 				1A2946D7A3130F96A8652FCD /* AdSponsorDto.m in Sources */,
 				1A2948D8BDCCD2A190E7FD69 /* AdViewModel.m in Sources */,
 				1A2946DA26A243BF5FD99DA2 /* AdImage.m in Sources */,
+				1A294CB43949A7BDE4621B50 /* CollectionViewController.m in Sources */,
+				1A294302F589699D797A3D21 /* OysterContentAdCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

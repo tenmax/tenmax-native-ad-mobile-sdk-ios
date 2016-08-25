@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIView *nativeAdPlaceholder;
 - (IBAction)clickBtn:(id)sender;
 
+
 @end
 

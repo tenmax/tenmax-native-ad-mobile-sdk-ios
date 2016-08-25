@@ -51,6 +51,9 @@
 
   NSURLSession* session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
   [[session dataTaskWithRequest:request completionHandler:^(NSData* data, NSURLResponse* response, NSError* error) {
+
+    NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*) response;
+    int responseStatusCode = [httpResponse statusCode];
     if (!error && [data length] > 0) {
       AdDto* adDto = [self getReceivedData:data];
       if (adDto) {
@@ -109,6 +112,13 @@
                                                                  error:&error];
   if (error) {
     [self.contentAdLoadedListener onAdFailedToLoad:error];
+    return nil;
+  }
+
+  if (!receivedData[@"native"]) {
+    NSDictionary* userInfo = @{NSLocalizedDescriptionKey : @"Platform error, please try again later."};
+    NSError* emptyData = [[NSError alloc] initWithDomain:@"PlatformError" code:480 userInfo:userInfo];
+    [self.contentAdLoadedListener onAdFailedToLoad:emptyData];
     return nil;
   }
   return [self convertToNativeAdDto:receivedData];

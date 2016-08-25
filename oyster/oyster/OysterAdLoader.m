@@ -14,7 +14,6 @@
 @property (nonatomic, readonly, assign) UIViewController* rootViewController;
 @property (nonatomic, readonly, strong) NSArray* adTypes;
 @property (nonatomic, readonly, strong) OysterAdLoaderOptions* options;
-@property (nonatomic, readonly, strong) ServiceLoader* serviceLoader;
 
 @end
 
@@ -30,17 +29,7 @@
   _adTypes = [adTypes copy];
   _options = options;
 
-  _serviceLoader = [[ServiceLoader alloc] initWithAdUnitID:adUnitID options:options];
-
   return self;
-}
-
-- (void) setDelegate:(id<OysterAdLoaderDelegate>) delegate {
-  _delegate = delegate;
-  if ([delegate conformsToProtocol:@protocol(OysterContentAdLoaderDelegate)]) {
-    self.serviceLoader.contentAdLoadedListener = [[ContentAdLoadedListener alloc]
-        initWithDelegate:(id<OysterContentAdLoaderDelegate>) delegate adLoader:self];
-  }
 }
 
 - (void) loadRequest {
@@ -53,8 +42,13 @@
   if (![self.adTypes containsObject:kOysterAdLoaderAdTypeContent]) {
     NSLog(@"Error: Error type to load.");
   }
+  ServiceLoader* loader = [[ServiceLoader alloc] initWithAdUnitID:self.adUnitID options:self.options];
+  if ([self.delegate conformsToProtocol:@protocol(OysterContentAdLoaderDelegate)]) {
+    loader.contentAdLoadedListener = [[ContentAdLoadedListener alloc]
+        initWithDelegate:(id<OysterContentAdLoaderDelegate>) self.delegate adLoader:self];
+  }
+  [loader loadAd];
 
-  [self.serviceLoader loadAd];
 }
 
 @end
