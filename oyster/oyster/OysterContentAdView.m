@@ -11,8 +11,9 @@
 
 @interface OysterContentAdView()
 @property (nonatomic, readwrite, assign) BOOL determine;
-@property (nonatomic, readwrite, assign) BOOL viewEvent;
-@property (nonatomic, readwrite, assign) long visibleStart;
+@property (nonatomic, readwrite, assign) BOOL viewEventSend;
+@property (nonatomic, readwrite, assign) CFAbsoluteTime visibleStart;
+@property (nonatomic, readwrite, strong) NSTimer* timer;;
 
 @end
 
@@ -23,10 +24,10 @@
 }
 
 - (void) tryDetermine {
-  if (self.determine || self.viewEvent) {
+  if (self.determine || self.viewEventSend) {
     return;
   }
-  self.determine = true;
+  self.determine = YES;
   [self determineDisplayArea];
 }
 
@@ -47,12 +48,40 @@
 
     CGFloat percent = visibleHeight * visibleWidth / (self.bounds.size.width * self.bounds.size.height);
     if (percent >= 0.5f) {
-      //#TODO timer start one sec
-      return;
+      if (self.visibleStart == 0) {
+        self.visibleStart = CFAbsoluteTimeGetCurrent();
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                      target:self
+                                                    selector:@selector(determineDisplayArea)
+                                                    userInfo:nil
+                                                     repeats:NO];
+        [self.timer fire];
+        return;
+      } else {
+        if (!self.viewEventSend) {
+          self.viewEventSend = YES;
+          [self sendViewEvent];
+        }
+      }
     }
   }
   self.visibleStart = 0;
   self.determine = NO;
+}
+
+- (void) sendViewEvent {
+  if (!self.oysterContentAd) {
+    return;
+  }
+  NSArray<NSString*>* viewEvents = [self.oysterContentAd valueForKey:@"viewEvents"];
+  for (int i = 0; i < viewEvents.count; ++i) {
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[[NSURL alloc] initWithString:viewEvents[(NSUInteger) i]]];
+    [request setHTTPMethod:@"GET"];
+    NSURLSession* session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData* data, NSURLResponse* response, NSError* error) {
+    }] resume];
+  }
 }
 
 - (CGFloat) getVisibleX:(CGFloat) x {
@@ -98,6 +127,12 @@
   tapGestureRecognizer.numberOfTapsRequired = 1;
 
   [self addGestureRecognizer:tapGestureRecognizer];
+
+  self.viewEventSend = NO;
+  self.determine = NO;
+  self.visibleStart = 0;
+  [self.timer invalidate];
+  self.timer = nil;
 }
 
 - (void) layoutSubviews {
