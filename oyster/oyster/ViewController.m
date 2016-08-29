@@ -9,11 +9,12 @@
 
 
 #import "ViewController.h"
-#import "OysterAdType.h"
-#import "OysterAdLoader.h"
-#import "OysterContentAd.h"
-#import "OysterContentAdView.h"
-#import "OysterAdImage.h"
+//#import "OysterAdType.h"
+//#import "OysterAdLoader.h"
+//#import "OysterContentAd.h"
+//#import "OysterContentAdView.h"
+//#import "OysterAdImage.h"
+@import Oyster;
 
 @interface ViewController()<OysterContentAdLoaderDelegate>
 @property (nonatomic, readwrite, strong) OysterAdLoader* adLoader;
