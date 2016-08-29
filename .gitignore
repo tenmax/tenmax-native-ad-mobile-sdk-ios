@@ -1,0 +1,6 @@
+erdata
+.DS_Store
+.idea/
+Pods/
+build/
+*.swp

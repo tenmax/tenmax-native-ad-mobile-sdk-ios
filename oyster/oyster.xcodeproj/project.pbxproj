@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1A294302F589699D797A3D21 /* OysterContentAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */; };
 		1A294CB43949A7BDE4621B50 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294DE99C495A7B000D3758 /* CollectionViewController.m */; };
-		4A0C34D91D73E7AA00D796BF /* Oyster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C34D01D73E5FF00D796BF /* Oyster.framework */; };
-		4A0C34DA1D73E7AA00D796BF /* Oyster.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0C34D01D73E5FF00D796BF /* Oyster.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A14EFD01D66F7AB004781A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFCF1D66F7AB004781A4 /* main.m */; };
 		4A14EFD31D66F7AB004781A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFD21D66F7AB004781A4 /* AppDelegate.m */; };
 		4A14EFD61D66F7AB004781A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFD51D66F7AB004781A4 /* ViewController.m */; };
@@ -18,6 +16,8 @@
 		4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDA1D66F7AB004781A4 /* Assets.xcassets */; };
 		4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDC1D66F7AB004781A4 /* LaunchScreen.storyboard */; };
 		4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */; };
+		4A907DFD1D73EE26000EE03D /* Oyster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A907DFB1D73EE1E000EE03D /* Oyster.framework */; };
+		4A907DFE1D73EE26000EE03D /* Oyster.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A907DFB1D73EE1E000EE03D /* Oyster.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A0C34DA1D73E7AA00D796BF /* Oyster.framework in Embed Frameworks */,
+				4A907DFE1D73EE26000EE03D /* Oyster.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +39,6 @@
 		1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterContentAdCell.m; sourceTree = "<group>"; };
 		1A294BAC8A41CC3B8AAB28BD /* OysterContentAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterContentAdCell.h; sourceTree = "<group>"; };
 		1A294DE99C495A7B000D3758 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		4A0C34D01D73E5FF00D796BF /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Oyster.framework; sourceTree = "<group>"; };
 		4A14EFCB1D66F7AB004781A4 /* oyster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oyster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A14EFCF1D66F7AB004781A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A14EFD11D66F7AB004781A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
+		4A907DFB1D73EE1E000EE03D /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Oyster.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0C34D91D73E7AA00D796BF /* Oyster.framework in Frameworks */,
+				4A907DFD1D73EE26000EE03D /* Oyster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		4A14EFC21D66F7AB004781A4 = {
 			isa = PBXGroup;
 			children = (
-				4A0C34D01D73E5FF00D796BF /* Oyster.framework */,
+				4A907DFB1D73EE1E000EE03D /* Oyster.framework */,
 				4A14EFCD1D66F7AB004781A4 /* oyster */,
 				4A14EFCC1D66F7AB004781A4 /* Products */,
 			);
@@ -253,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -307,8 +307,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/oyster",
 				);
 				INFOPLIST_FILE = oyster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.oyster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,8 +326,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/oyster",
 				);
 				INFOPLIST_FILE = oyster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.oyster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
