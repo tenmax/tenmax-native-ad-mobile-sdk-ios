@@ -52,25 +52,37 @@
   NSURLSession* session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
   [[session dataTaskWithRequest:request completionHandler:^(NSData* data, NSURLResponse* response, NSError* error) {
 
+    if (error) {
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contentAdLoadedListener onAdFailedToLoad:error];
+      });
+      return;
+    }
+
     NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*) response;
     int responseStatusCode = [httpResponse statusCode];
-    if (!error && [data length] > 0) {
-      AdDto* adDto = [self getReceivedData:data];
-      if (adDto) {
-        [self impressionEventCallback:adDto];
-        AdViewModel* model = [adDto createAdViewModel:self.options];
-        if (self.options.imageSize) {
-          model.adImage.image = [self getImageWithUrl:model.adImage.url];
-          model.icon.image = [self getImageWithUrl:model.icon.url];
-        }
-        dispatch_async(dispatch_get_main_queue(), ^{
-          [self.contentAdLoadedListener onSuccess:model];
-        });
-
-      }
-    } else {
-      [self.contentAdLoadedListener onAdFailedToLoad:error];
+    if (responseStatusCode >= 300 || responseStatusCode < 200) {
+      NSDictionary* userInfo = @{NSLocalizedDescriptionKey : @"Platform error, please try again later."};
+      NSError* emptyData = [[NSError alloc] initWithDomain:@"PlatformError" code:480 userInfo:userInfo];
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contentAdLoadedListener onAdFailedToLoad:emptyData];
+      });
+      return;
     }
+
+    AdDto* adDto = [self getReceivedData:data];
+    if (adDto) {
+      [self impressionEventCallback:adDto];
+      AdViewModel* model = [adDto createAdViewModel:self.options];
+      if (self.options.imageSize) {
+        model.adImage.image = [self getImageWithUrl:model.adImage.url];
+        model.icon.image = [self getImageWithUrl:model.icon.url];
+      }
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contentAdLoadedListener onSuccess:model];
+      });
+    }
+
   }] resume];
 }
 
@@ -111,14 +123,18 @@
                                                                options:NSJSONReadingAllowFragments
                                                                  error:&error];
   if (error) {
-    [self.contentAdLoadedListener onAdFailedToLoad:error];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.contentAdLoadedListener onAdFailedToLoad:error];
+    });
     return nil;
   }
 
   if (!receivedData[@"native"]) {
     NSDictionary* userInfo = @{NSLocalizedDescriptionKey : @"Platform error, please try again later."};
     NSError* emptyData = [[NSError alloc] initWithDomain:@"PlatformError" code:480 userInfo:userInfo];
-    [self.contentAdLoadedListener onAdFailedToLoad:emptyData];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [self.contentAdLoadedListener onAdFailedToLoad:emptyData];
+    });
     return nil;
   }
   return [self convertToNativeAdDto:receivedData];
