@@ -11,7 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Oyster/AdLinkDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdImage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAd.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Oyster/AdImage.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAd.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/AdImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterContentAdView.m" isTestSource="false" />
@@ -22,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Oyster/AdDto.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdType.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdLoader.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdImage.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Oyster/AdImage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/OysterAdLoaderDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/Oyster.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Oyster/AdSponsorDto.m" isTestSource="false" />
