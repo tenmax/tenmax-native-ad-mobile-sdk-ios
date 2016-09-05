@@ -61,7 +61,7 @@
     }
 
     NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*) response;
-    int responseStatusCode = (int)[httpResponse statusCode];
+    int responseStatusCode = (int) [httpResponse statusCode];
     if (responseStatusCode >= 300 || responseStatusCode < 200) {
       NSDictionary* userInfo = @{NSLocalizedDescriptionKey : @"Platform error, please try again later."};
       NSError* emptyData = [[NSError alloc] initWithDomain:@"PlatformError" code:480 userInfo:userInfo];
@@ -109,11 +109,12 @@
   [components setScheme:@"https"];
   [components setHost:@"ssp.tenmax.io"];
   [components setPath:@"/supply/mobile/native/rmax-ad/"];
-  NSURLQueryItem* rmaxSpaceId = [NSURLQueryItem queryItemWithName:@"rmaxSpaceId" value:self.adUnitID];
-  NSURLQueryItem* dpid = [NSURLQueryItem queryItemWithName:@"dpid" value:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-  NSURLQueryItem* v = [NSURLQueryItem queryItemWithName:@"v" value:[[UIDevice currentDevice] systemVersion]];
-  components.queryItems = @[rmaxSpaceId, dpid, v];
-
+  [components setPercentEncodedQuery:[NSString stringWithFormat:@"rmaxSpaceId=%@&dpid=%@&v=%@",
+                                                                self.adUnitID,
+                                                                [[[ASIdentifierManager sharedManager]
+                                                                    advertisingIdentifier]
+                                                                    UUIDString],
+                                                                [[UIDevice currentDevice] systemVersion]]];
   return components.URL;
 
 }
