@@ -45,7 +45,9 @@
   [request setURL:[self getOysterUrl]];
   [request setHTTPMethod:@"GET"];
   [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-  [request setValue:[NSString stringWithFormat:@"%@ %@",
+  NSString* sdkVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+  [request setValue:[NSString stringWithFormat:@"tenmaxSDK_%@: %@ %@",
+                                               sdkVersion,
                                                [[UIDevice currentDevice] name],
                                                [[UIDevice currentDevice] systemVersion]]
       forHTTPHeaderField:@"User-agent"];
@@ -109,12 +111,13 @@
   [components setScheme:@"https"];
   [components setHost:@"ssp.tenmax.io"];
   [components setPath:@"/supply/mobile/native/rmax-ad/"];
+  NSString* sdkVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
   [components setPercentEncodedQuery:[NSString stringWithFormat:@"rmaxSpaceId=%@&dpid=%@&v=%@",
                                                                 self.adUnitID,
                                                                 [[[ASIdentifierManager sharedManager]
                                                                     advertisingIdentifier]
                                                                     UUIDString],
-                                                                [[UIDevice currentDevice] systemVersion]]];
+                                                                sdkVersion]];
   return components.URL;
 
 }
@@ -208,9 +211,23 @@
 - (NSString*) revertUrl:(NSString*) similarUrl {
   if ([similarUrl hasPrefix:@"//"]) {
     return [NSString stringWithFormat:@"https:%@", similarUrl];
-  } else if (![similarUrl containsString:@"://"]) {
-    return [NSString stringWithFormat:@"https://%@", similarUrl];
+  }
+  if ([self isMinimumIOSVersion:8]) {
+    if (![similarUrl containsString:@"://"]) {
+      return [NSString stringWithFormat:@"https://%@", similarUrl];
+    }
+  } else {
+    if ([similarUrl rangeOfString:@"://"].location == NSNotFound) {
+      return [NSString stringWithFormat:@"https://%@", similarUrl];
+    }
   }
   return similarUrl;
 }
+
+- (BOOL) isMinimumIOSVersion:(NSInteger) requiredVersion {
+  NSArray* versions = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"\\."];
+  NSInteger actualVersion = ((NSString*) versions[0]).intValue;
+  return actualVersion >= requiredVersion;
+}
+
 @end

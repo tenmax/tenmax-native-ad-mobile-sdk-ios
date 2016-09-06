@@ -65,7 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A0C34751D7026CA00D796BF /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Oyster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0C34781D7026CA00D796BF /* Oyster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oyster.h; sourceTree = "<group>"; };
 		4A0C347A1D7026CA00D796BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A0C34851D70294D00D796BF /* OysterContentAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterContentAdView.h; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		4A0C34AB1D702A1C00D796BF /* AdViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewModel.h; sourceTree = "<group>"; };
 		4A0C34BC1D702AD000D796BF /* AdImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdImage.m; sourceTree = "<group>"; };
 		4A0C34BD1D702AD000D796BF /* AdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImage.h; sourceTree = "<group>"; };
+		4A2640001D7EB41C00FB4CE0 /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Oyster.framework; path = "/Users/liq/develop/oyster-all/oyster-iOS-framework/Oyster/build/Release-iphoneos/Oyster.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,6 @@
 		4A0C34761D7026CA00D796BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A0C34751D7026CA00D796BF /* Oyster.framework */,
 			);
 			name = Products;
 			path = ..;
@@ -218,7 +217,7 @@
 			);
 			name = Oyster;
 			productName = Oyster;
-			productReference = 4A0C34751D7026CA00D796BF /* Oyster.framework */;
+			productReference = 4A2640001D7EB41C00FB4CE0 /* Oyster.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
