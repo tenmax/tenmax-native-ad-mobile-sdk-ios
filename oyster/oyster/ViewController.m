@@ -9,12 +9,6 @@
 
 
 #import "ViewController.h"
-//#import "OysterAdType.h"
-//#import "OysterAdLoader.h"
-//#import "OysterContentAd.h"
-//#import "OysterContentAdView.h"
-//#import "OysterAdImage.h"
-@import Oyster;
 
 @interface ViewController()<OysterContentAdLoaderDelegate>
 @property (nonatomic, readwrite, strong) OysterAdLoader* adLoader;
@@ -28,6 +22,12 @@
 - (void) viewDidLoad {
   [super viewDidLoad];
 
+  [self loadNative];
+  [self loadBanner];
+
+}
+
+- (void) loadNative {
   NSMutableArray* adType = [NSMutableArray array];
   [adType addObject:kOysterAdLoaderAdTypeContent];
 
@@ -39,7 +39,13 @@
 
   self.adLoader.delegate = self;
   [self.adLoader loadRequest];
+}
 
+- (void) loadBanner {
+  self.oysterAdView.adUnitID = @"c145f1cd389e49a5";
+  self.oysterAdView.rootViewController = self;
+
+  [self.oysterAdView loadAds];
 }
 
 - (void) didReceiveMemoryWarning {

@@ -16,8 +16,8 @@
 		4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDA1D66F7AB004781A4 /* Assets.xcassets */; };
 		4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDC1D66F7AB004781A4 /* LaunchScreen.storyboard */; };
 		4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */; };
-		4A907DFD1D73EE26000EE03D /* Oyster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A907DFB1D73EE1E000EE03D /* Oyster.framework */; };
-		4A907DFE1D73EE26000EE03D /* Oyster.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A907DFB1D73EE1E000EE03D /* Oyster.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AF532F51D82C16F009D3CD0 /* Oyster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF532F41D82C16F009D3CD0 /* Oyster.framework */; };
+		4AF532F61D82C172009D3CD0 /* Oyster.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4AF532F41D82C16F009D3CD0 /* Oyster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A907DFE1D73EE26000EE03D /* Oyster.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +49,7 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
-		4A907DFB1D73EE1E000EE03D /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Oyster.framework; sourceTree = "<group>"; };
+		4AF532F41D82C16F009D3CD0 /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Oyster.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A907DFD1D73EE26000EE03D /* Oyster.framework in Frameworks */,
+				4AF532F51D82C16F009D3CD0 /* Oyster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +67,7 @@
 		4A14EFC21D66F7AB004781A4 = {
 			isa = PBXGroup;
 			children = (
-				4A907DFB1D73EE1E000EE03D /* Oyster.framework */,
+				4AF532F41D82C16F009D3CD0 /* Oyster.framework */,
 				4A14EFCD1D66F7AB004781A4 /* oyster */,
 				4A14EFCC1D66F7AB004781A4 /* Products */,
 			);
@@ -172,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF532F61D82C172009D3CD0 /* Oyster.framework in Resources */,
 				4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */,
 				4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */,
 				4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */,
@@ -315,6 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.oyster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -334,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.oyster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

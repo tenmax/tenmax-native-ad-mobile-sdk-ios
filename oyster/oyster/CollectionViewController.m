@@ -60,7 +60,7 @@
                   cellForItemAtIndexPath:(NSIndexPath*) indexPath {
 
   if ([self.datas[(NSUInteger) indexPath.row] isKindOfClass:[OysterContentAd class]]) {
-    
+
     OysterContentAdCell* oysterContentAdCell = (OysterContentAdCell*) [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(
             [OysterContentAdCell class])
                                                                                                                 forIndexPath:indexPath];

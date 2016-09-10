@@ -21,4 +21,6 @@
 @property (nonatomic, weak) IBOutlet UIView* logoView;
 @property (nonatomic, weak) IBOutlet UIView* advertiserView;
 
++ (void)_keepAtLinkTime;
+
 @end

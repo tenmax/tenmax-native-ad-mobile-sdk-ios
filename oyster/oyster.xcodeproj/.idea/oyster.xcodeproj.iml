@@ -8,10 +8,10 @@
       <sourceFolder url="file://$MODULE_DIR$/../oyster/NativeContentAdView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/CollectionViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../oyster/OysterContentAdCell.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/ViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../oyster/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />

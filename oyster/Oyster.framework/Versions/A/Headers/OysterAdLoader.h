@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, OysterImageSize) {
 @interface OysterAdLoader : NSObject
 
 @property (nonatomic, weak, nullable) id<OysterAdLoaderDelegate> delegate;
-@property (nonatomic, readonly, strong) NSString* adUnitID;
+@property (nonatomic, readonly, strong) NSString* __nonnull adUnitID;
 
 @property (nonatomic, readwrite, assign) OysterImageSize imageSize;
 

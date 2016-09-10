@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Oyster/Oyster.h>
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *nativeAdPlaceholder;
+@property (weak, nonatomic) IBOutlet OysterAdView *oysterAdView;
+
 - (IBAction)clickBtn:(id)sender;
 
 
