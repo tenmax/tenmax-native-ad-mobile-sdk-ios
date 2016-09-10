@@ -15,6 +15,7 @@
 #import <Oyster/OysterAdLoader.h>
 #import <Oyster/OysterAdLoaderDelegate.h>
 #import <Oyster/OysterAdType.h>
+#import <Oyster/OysterAdView.h>
 
 //! Project version number for Oyster.
 FOUNDATION_EXPORT double OysterVersionNumber;
@@ -24,4 +25,8 @@ FOUNDATION_EXPORT const unsigned char OysterVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Oyster/PublicHeader.h>
 
+@interface Oyster : NSObject
 
++ (void) initInstance;
+
+@end

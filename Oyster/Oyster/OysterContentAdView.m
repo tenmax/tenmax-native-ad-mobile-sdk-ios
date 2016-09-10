@@ -156,4 +156,8 @@
   [self tryDetermine];
 }
 
++ (void)_keepAtLinkTime {
+    
+}
+
 @end
