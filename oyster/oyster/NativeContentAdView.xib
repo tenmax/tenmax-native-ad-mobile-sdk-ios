@@ -42,6 +42,14 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLh-G3-mbX">
+                    <rect key="frame" x="184" y="91" width="108" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="iH7-g5-Wx3"/>
+                        <constraint firstAttribute="width" constant="108" id="w4o-3X-2KG"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -54,15 +62,18 @@
                 <constraint firstItem="tYV-3h-p0P" firstAttribute="centerY" secondItem="4Tj-27-v66" secondAttribute="centerY" id="UPP-DU-L34"/>
                 <constraint firstAttribute="trailing" secondItem="b7l-GF-JB9" secondAttribute="trailing" id="YTH-cd-8qN"/>
                 <constraint firstItem="9KN-iI-uIn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dKK-BF-uq7"/>
+                <constraint firstAttribute="bottom" secondItem="yLh-G3-mbX" secondAttribute="bottom" constant="79" id="ee4-qN-wPq"/>
                 <constraint firstItem="tYV-3h-p0P" firstAttribute="top" secondItem="9KN-iI-uIn" secondAttribute="bottom" constant="15" id="fHO-Li-dC3"/>
                 <constraint firstItem="b7l-GF-JB9" firstAttribute="top" secondItem="4Tj-27-v66" secondAttribute="bottom" constant="-1" id="r3J-eU-lfA"/>
                 <constraint firstItem="b7l-GF-JB9" firstAttribute="leading" secondItem="FVF-DW-6Jc" secondAttribute="trailing" constant="28" id="sLw-D9-mKZ"/>
                 <constraint firstItem="4Tj-27-v66" firstAttribute="leading" secondItem="tYV-3h-p0P" secondAttribute="trailing" constant="8" id="tRu-J5-jr5"/>
+                <constraint firstAttribute="trailing" secondItem="yLh-G3-mbX" secondAttribute="trailing" constant="28" id="yX3-Hk-2ca"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="advertiserView" destination="FVF-DW-6Jc" id="Dv4-O2-0Vl"/>
                 <outlet property="bodyView" destination="4Tj-27-v66" id="Be4-YX-EaI"/>
+                <outlet property="callToAction" destination="yLh-G3-mbX" id="UaT-7g-nX8"/>
                 <outlet property="headlineView" destination="9KN-iI-uIn" id="tjh-sv-3eO"/>
                 <outlet property="imageView" destination="tYV-3h-p0P" id="d7r-tJ-cjn"/>
                 <outlet property="logoView" destination="b7l-GF-JB9" id="4ct-y3-tg9"/>

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		D2VfoTmeyZbo7Yn2g1sRUMbZUmg=
-		</data>
 		<key>Headers/Oyster.h</key>
 		<data>
 		RflOpBqM5V4U4uRf5uYsFOzDoeA=
@@ -38,11 +34,11 @@
 		</data>
 		<key>Headers/OysterContentAd.h</key>
 		<data>
-		31s6bZer3du9S4H/Jwe+fL/48Gg=
+		DREau5LYEMViXLEVOafAo8VUap8=
 		</data>
 		<key>Headers/OysterContentAdView.h</key>
 		<data>
-		hFpmisQ5BXMmbGzyVx0UTmorzSU=
+		xrGyfpIngq/qUrwoab0L8NE4d+4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -59,17 +55,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			D2VfoTmeyZbo7Yn2g1sRUMbZUmg=
-			</data>
-			<key>hash2</key>
-			<data>
-			b0S52xTKvR5ArDszBFENRPjRovzt2j3+uIpEFhPQQLU=
-			</data>
-		</dict>
 		<key>Headers/Oyster.h</key>
 		<dict>
 			<key>hash</key>
@@ -151,22 +136,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			31s6bZer3du9S4H/Jwe+fL/48Gg=
+			DREau5LYEMViXLEVOafAo8VUap8=
 			</data>
 			<key>hash2</key>
 			<data>
-			xr0fcHtfQvNKCf2GOITgEPL4fg855b+N32j/3uvSYoE=
+			un/1BlPuRab7GovBD5NdNyEIVKFoHa/wWGvj/TpyJEg=
 			</data>
 		</dict>
 		<key>Headers/OysterContentAdView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hFpmisQ5BXMmbGzyVx0UTmorzSU=
+			xrGyfpIngq/qUrwoab0L8NE4d+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tsY53oPxE4t/5J6blcBQNvADEFeerkpKEnOoCUXurZ0=
+			6TIowRoBBlJKnwf/r0udhYsCWRuC4zjaPSocCfA7ASU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

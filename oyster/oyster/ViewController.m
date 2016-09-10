@@ -70,6 +70,7 @@
   ((UILabel*) oysterContentAdView.advertiserView).text = oysterContentAd.advertiser;
   ((UIImageView*) oysterContentAdView.imageView).image = oysterContentAd.adImage.image;
   ((UIImageView*) oysterContentAdView.logoView).image = oysterContentAd.adLogo.image;
+  [((UIButton*) oysterContentAdView.callToAction) setTitle:oysterContentAd.callToAction forState:UIControlStateNormal];
 
 }
 

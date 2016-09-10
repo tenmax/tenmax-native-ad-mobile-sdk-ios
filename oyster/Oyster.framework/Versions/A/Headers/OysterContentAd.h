@@ -22,6 +22,8 @@
 @property (nonatomic, readonly, strong) OysterAdImage* adImage;
 @property (nonatomic, readonly, strong) OysterAdImage* adLogo;
 @property (nonatomic, readonly, copy) NSString* advertiser;
+@property (nonatomic, readonly, copy) NSString* callToAction;
+
 @end
 
 #pragma mark - Protocol and constants

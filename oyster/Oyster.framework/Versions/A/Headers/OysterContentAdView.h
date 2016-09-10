@@ -20,6 +20,7 @@
 @property (nonatomic, weak) IBOutlet UIView* imageView;
 @property (nonatomic, weak) IBOutlet UIView* logoView;
 @property (nonatomic, weak) IBOutlet UIView* advertiserView;
+@property (nonatomic, weak) IBOutlet UIView* callToAction;
 
 + (void)_keepAtLinkTime;
 
