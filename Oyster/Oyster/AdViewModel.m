@@ -17,7 +17,8 @@
                           icon:(AdImage*) icon
                          image:(AdImage*) image
               impressionEvents:(NSArray<NSString*>*) impressionEvents
-                    viewEvents:(NSArray<NSString*>*) viewEvents {
+                    viewEvents:(NSArray<NSString*>*) viewEvents
+                  callToAction:(NSString*) callToAction {
   self = [super init];
   if (self) {
     _title = title;
@@ -28,6 +29,7 @@
     _adImage = image;
     _impressionEvents = impressionEvents;
     _viewEvents = viewEvents;
+    _callToAction = callToAction;
   }
 
   return self;
@@ -44,6 +46,8 @@
   [oysterContentAd setValue:self.sponsor forKey:NSStringFromSelector(@selector(advertiser))];
   [oysterContentAd setValue:self.viewEvents forKey:NSStringFromSelector(@selector(viewEvents))];
   [oysterContentAd setValue:self.link forKey:NSStringFromSelector(@selector(link))];
+  [oysterContentAd setValue:self.callToAction forKey:NSStringFromSelector(@selector(callToAction))];
+
   return oysterContentAd;
 }
 

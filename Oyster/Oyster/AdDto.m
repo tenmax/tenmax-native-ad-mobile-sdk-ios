@@ -24,7 +24,8 @@
                      largeIcon:(AdImageDto*) largeIcon
                      smallIcon:(AdImageDto*) smallIcon
               impressionEvents:(NSArray<NSString*>*) impressionEvents
-                    viewEvents:(NSArray<NSString*>*) viewEvents {
+                    viewEvents:(NSArray<NSString*>*) viewEvents
+                  callToAction:(NSString*) callToAction {
   self = [super init];
   if (self) {
     _title = title;
@@ -39,6 +40,7 @@
     _smallIcon = smallIcon;
     _impressionEvents = impressionEvents;
     _viewEvents = viewEvents;
+    _callToAction = callToAction;
   }
 
   return self;
@@ -71,7 +73,8 @@
                icon:[[AdImage alloc] initWithUrl:iconUrl]
               image:[[AdImage alloc] initWithUrl:imageUrl]
    impressionEvents:self.impressionEvents
-         viewEvents:self.viewEvents];
+         viewEvents:self.viewEvents
+       callToAction:self.callToAction];
 
 }
 

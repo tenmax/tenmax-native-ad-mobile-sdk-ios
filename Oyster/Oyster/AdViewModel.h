@@ -19,6 +19,7 @@
 @property (nonatomic, readonly, strong) AdImage* adImage;
 @property (nonatomic, readonly, strong) NSArray<NSString*>* impressionEvents;
 @property (nonatomic, readonly, strong) NSArray<NSString*>* viewEvents;
+@property (nonatomic, readonly, strong) NSString* callToAction;
 
 - (instancetype) initWithTitle:(NSString*) title
                        summary:(NSString*) summary
@@ -27,7 +28,8 @@
                           icon:(AdImage*) icon
                          image:(AdImage*) image
               impressionEvents:(NSArray<NSString*>*) impressionEvents
-                    viewEvents:(NSArray<NSString*>*) viewEvents;
+                    viewEvents:(NSArray<NSString*>*) viewEvents
+                  callToAction:(NSString*) callToAction;
 
 - (OysterContentAd*) createFormatOysterContentAd;
 @end

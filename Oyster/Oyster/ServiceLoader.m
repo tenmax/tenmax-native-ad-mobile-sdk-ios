@@ -171,7 +171,8 @@
           largeIcon:[self getImage:assetsDic[@"8"]]
           smallIcon:[self getImage:assetsDic[@"9"]]
    impressionEvents:[self getEvent:[[NSArray alloc] initWithArray:nativeDic[@"impressionEvent"]]]
-         viewEvents:[self getEvent:[[NSArray alloc] initWithArray:nativeDic[@"viewEvent"]]]];
+         viewEvents:[self getEvent:[[NSArray alloc] initWithArray:nativeDic[@"viewEvent"]]]
+       callToAction:[self getDataValue:assetsDic[@"10"]]];
 }
 
 - (NSString*) getTitle:(NSDictionary*) dic {

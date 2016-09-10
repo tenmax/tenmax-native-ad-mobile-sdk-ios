@@ -55,7 +55,6 @@
 		4A2640091D800B4E00FB4CE0 /* OysterAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2640071D800B4D00FB4CE0 /* OysterAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A26400A1D800B4E00FB4CE0 /* OysterAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2640081D800B4E00FB4CE0 /* OysterAdView.m */; };
 		4AF532441D815034009D3CD0 /* Oyster.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF532431D815034009D3CD0 /* Oyster.m */; };
-		4AF5327F1D826087009D3CD0 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF5327E1D826087009D3CD0 /* Image.xcassets */; };
 		4AF532F31D82C113009D3CD0 /* callTo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF532F21D82C113009D3CD0 /* callTo.png */; };
 /* End PBXBuildFile section */
 
@@ -103,9 +102,8 @@
 		4A0C34BD1D702AD000D796BF /* AdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImage.h; sourceTree = "<group>"; };
 		4A2640071D800B4D00FB4CE0 /* OysterAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterAdView.h; sourceTree = "<group>"; };
 		4A2640081D800B4E00FB4CE0 /* OysterAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterAdView.m; sourceTree = "<group>"; };
-		4AF532421D814F0A009D3CD0 /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Oyster.framework; path = "/Users/liq/develop/oyster-all/oyster-iOS-framework/Oyster/build/Debug-iphoneos/Oyster.framework"; sourceTree = "<absolute>"; };
+		4ADF4F971D86C9F3000FC2A0 /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Oyster.framework; path = "/Users/liq/develop/oyster-all/oyster-iOS-framework/Oyster/build/Debug-iphoneos/Oyster.framework"; sourceTree = "<absolute>"; };
 		4AF532431D815034009D3CD0 /* Oyster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oyster.m; sourceTree = "<group>"; };
-		4AF5327E1D826087009D3CD0 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		4AF532F21D82C113009D3CD0 /* callTo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callTo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +156,6 @@
 				4A0C34BB1D702A2400D796BF /* internal */,
 				4A0C347A1D7026CA00D796BF /* Info.plist */,
 				4A0C34761D7026CA00D796BF /* Products */,
-				4AF5327E1D826087009D3CD0 /* Image.xcassets */,
 			);
 			path = Oyster;
 			sourceTree = "<group>";
@@ -233,7 +230,7 @@
 			);
 			name = Oyster;
 			productName = Oyster;
-			productReference = 4AF532421D814F0A009D3CD0 /* Oyster.framework */;
+			productReference = 4ADF4F971D86C9F3000FC2A0 /* Oyster.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF5327F1D826087009D3CD0 /* Image.xcassets in Resources */,
 				4AF532F31D82C113009D3CD0 /* callTo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

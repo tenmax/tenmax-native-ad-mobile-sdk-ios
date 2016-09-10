@@ -24,6 +24,7 @@
 @property (nonatomic, readonly, strong) AdImageDto* smallIcon;
 @property (nonatomic, readonly, strong) NSArray<NSString*>* impressionEvents;
 @property (nonatomic, readonly, strong) NSArray<NSString*>* viewEvents;
+@property (nonatomic, readonly, strong) NSString* callToAction;
 
 - (instancetype) initWithTitle:(NSString*) title
                        summary:(NSString*) summary
@@ -36,7 +37,8 @@
                      largeIcon:(AdImageDto*) largeIcon
                      smallIcon:(AdImageDto*) smallIcon
               impressionEvents:(NSArray<NSString*>*) impressionEvents
-                    viewEvents:(NSArray<NSString*>*) viewEvents;
+                    viewEvents:(NSArray<NSString*>*) viewEvents
+                  callToAction:(NSString*) callToAction;
 
 - (AdViewModel*) createAdViewModel:(OysterAdLoaderOptions*) options;
 
