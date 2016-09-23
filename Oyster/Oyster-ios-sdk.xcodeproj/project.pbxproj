@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		4A0C34C51D702F5B00D796BF /* Oyster-Aggregate */ = {
+		4A0C34C51D702F5B00D796BF /* Oyster-ios-sdk-Aggregate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4A0C34C61D702F5B00D796BF /* Build configuration list for PBXAggregateTarget "Oyster-Aggregate" */;
+			buildConfigurationList = 4A0C34C61D702F5B00D796BF /* Build configuration list for PBXAggregateTarget "Oyster-ios-sdk-Aggregate" */;
 			buildPhases = (
 				4A0C34C91D702F7000D796BF /* Run Script */,
 			);
 			dependencies = (
 				4A0C34CB1D70306700D796BF /* PBXTargetDependency */,
 			);
-			name = "Oyster-Aggregate";
+			name = "Oyster-ios-sdk-Aggregate";
 			productName = "Oyster-Aggregate";
 		};
 /* End PBXAggregateTarget section */
@@ -100,9 +100,9 @@
 		4A0C34AB1D702A1C00D796BF /* AdViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewModel.h; sourceTree = "<group>"; };
 		4A0C34BC1D702AD000D796BF /* AdImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdImage.m; sourceTree = "<group>"; };
 		4A0C34BD1D702AD000D796BF /* AdImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImage.h; sourceTree = "<group>"; };
+		4A0F7E281D94CF1000A23F3D /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Oyster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2640071D800B4D00FB4CE0 /* OysterAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OysterAdView.h; sourceTree = "<group>"; };
 		4A2640081D800B4E00FB4CE0 /* OysterAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OysterAdView.m; sourceTree = "<group>"; };
-		4ADF4F971D86C9F3000FC2A0 /* Oyster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Oyster.framework; path = "/Users/liq/develop/oyster-all/oyster-iOS-framework/Oyster/build/Debug-iphoneos/Oyster.framework"; sourceTree = "<absolute>"; };
 		4AF532431D815034009D3CD0 /* Oyster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oyster.m; sourceTree = "<group>"; };
 		4AF532F21D82C113009D3CD0 /* callTo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callTo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +128,7 @@
 		4A0C34761D7026CA00D796BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4A0F7E281D94CF1000A23F3D /* Oyster.framework */,
 			);
 			name = Products;
 			path = ..;
@@ -215,9 +216,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A0C34741D7026CA00D796BF /* Oyster */ = {
+		4A0C34741D7026CA00D796BF /* Oyster-ios-sdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A0C347D1D7026CA00D796BF /* Build configuration list for PBXNativeTarget "Oyster" */;
+			buildConfigurationList = 4A0C347D1D7026CA00D796BF /* Build configuration list for PBXNativeTarget "Oyster-ios-sdk" */;
 			buildPhases = (
 				4A0C34701D7026CA00D796BF /* Sources */,
 				4A0C34711D7026CA00D796BF /* Frameworks */,
@@ -228,9 +229,9 @@
 			);
 			dependencies = (
 			);
-			name = Oyster;
+			name = "Oyster-ios-sdk";
 			productName = Oyster;
-			productReference = 4ADF4F971D86C9F3000FC2A0 /* Oyster.framework */;
+			productReference = 4A0F7E281D94CF1000A23F3D /* Oyster.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A0C346F1D7026CA00D796BF /* Build configuration list for PBXProject "Oyster" */;
+			buildConfigurationList = 4A0C346F1D7026CA00D796BF /* Build configuration list for PBXProject "Oyster-ios-sdk" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A0C34741D7026CA00D796BF /* Oyster */,
-				4A0C34C51D702F5B00D796BF /* Oyster-Aggregate */,
+				4A0C34741D7026CA00D796BF /* Oyster-ios-sdk */,
+				4A0C34C51D702F5B00D796BF /* Oyster-ios-sdk-Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +325,7 @@
 /* Begin PBXTargetDependency section */
 		4A0C34CB1D70306700D796BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A0C34741D7026CA00D796BF /* Oyster */;
+			target = 4A0C34741D7026CA00D796BF /* Oyster-ios-sdk */;
 			targetProxy = 4A0C34CA1D70306700D796BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,7 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.Oyster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Oyster-ios-sdk";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -451,7 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tenmax.Oyster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Oyster-ios-sdk";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -459,21 +460,21 @@
 		4A0C34C71D702F5B00D796BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Oyster-ios-sdk";
 			};
 			name = Debug;
 		};
 		4A0C34C81D702F5B00D796BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Oyster-ios-sdk";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A0C346F1D7026CA00D796BF /* Build configuration list for PBXProject "Oyster" */ = {
+		4A0C346F1D7026CA00D796BF /* Build configuration list for PBXProject "Oyster-ios-sdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A0C347B1D7026CA00D796BF /* Debug */,
@@ -482,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A0C347D1D7026CA00D796BF /* Build configuration list for PBXNativeTarget "Oyster" */ = {
+		4A0C347D1D7026CA00D796BF /* Build configuration list for PBXNativeTarget "Oyster-ios-sdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A0C347E1D7026CA00D796BF /* Debug */,
@@ -491,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A0C34C61D702F5B00D796BF /* Build configuration list for PBXAggregateTarget "Oyster-Aggregate" */ = {
+		4A0C34C61D702F5B00D796BF /* Build configuration list for PBXAggregateTarget "Oyster-ios-sdk-Aggregate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A0C34C71D702F5B00D796BF /* Debug */,

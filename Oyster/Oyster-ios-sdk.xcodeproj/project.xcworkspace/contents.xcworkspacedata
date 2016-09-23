@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Oyster.xcodeproj">
+      location = "self:/Users/liq/develop/oyster-all/oyster-iOS-framework/Oyster/Oyster-ios-sdk.xcodeproj">
    </FileRef>
 </Workspace>
