@@ -16,7 +16,6 @@
 		4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDA1D66F7AB004781A4 /* Assets.xcassets */; };
 		4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDC1D66F7AB004781A4 /* LaunchScreen.storyboard */; };
 		4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */; };
-		4ADDA8FE1D9904480099E6E2 /* Oyster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADDA8FD1D9904480099E6E2 /* Oyster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +47,6 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
-		4ADDA8FD1D9904480099E6E2 /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Oyster.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ADDA8FE1D9904480099E6E2 /* Oyster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,8 +63,7 @@
 		4A14EFC21D66F7AB004781A4 = {
 			isa = PBXGroup;
 			children = (
-				4ADDA8FD1D9904480099E6E2 /* Oyster.framework */,
-				4A14EFCD1D66F7AB004781A4 /* oyster */,
+				4A14EFCD1D66F7AB004781A4 /* sample */,
 				4A14EFCC1D66F7AB004781A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +76,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A14EFCD1D66F7AB004781A4 /* oyster */ = {
+		4A14EFCD1D66F7AB004781A4 /* sample */ = {
 			isa = PBXGroup;
 			children = (
 				4A14EFD11D66F7AB004781A4 /* AppDelegate.h */,
@@ -98,6 +94,7 @@
 				1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */,
 				1A294BAC8A41CC3B8AAB28BD /* OysterContentAdCell.h */,
 			);
+			name = sample;
 			path = oyster;
 			sourceTree = "<group>";
 		};
