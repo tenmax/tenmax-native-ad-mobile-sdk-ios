@@ -4,7 +4,6 @@
 //
 
 #import "OysterContentAdCell.h"
-@import Oyster;
 
 @implementation OysterContentAdCell
 

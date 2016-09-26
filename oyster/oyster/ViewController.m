@@ -6,8 +6,6 @@
 //  Copyright © 2016 tenmax. All rights reserved.
 //
 
-
-
 #import "ViewController.h"
 
 @interface ViewController()<OysterContentAdLoaderDelegate>

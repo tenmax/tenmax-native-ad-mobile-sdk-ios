@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Oyster/Oyster.h>
 
 @class OysterContentAdView;
 

@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-Sm-PhZ">
-                                <rect key="frame" x="16" y="64" width="343" height="194"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="194" id="xxD-sk-C3D"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EE-gp-5Se">
                                 <rect key="frame" x="16" y="400" width="77" height="30"/>
                                 <state key="normal" title="Reload Ads"/>
                                 <connections>
                                     <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Up9-dI-Jeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-V1-JKU" userLabel="next">
+                                <rect key="frame" x="259" y="400" width="104" height="30"/>
+                                <state key="normal" title="Next Controller"/>
+                                <connections>
+                                    <segue destination="M7O-gx-H8W" kind="show" id="Qff-OU-iqq"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJN-eT-4dy" customClass="OysterAdView">
@@ -37,13 +37,13 @@
                                     <constraint firstAttribute="height" constant="50" id="Hgh-8p-4ZD"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-V1-JKU" userLabel="next">
-                                <rect key="frame" x="259" y="400" width="104" height="30"/>
-                                <state key="normal" title="Next Controller"/>
-                                <connections>
-                                    <segue destination="M7O-gx-H8W" kind="show" id="Qff-OU-iqq"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-Sm-PhZ">
+                                <rect key="frame" x="16" y="64" width="343" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="xxD-sk-C3D"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="224"/>
+            <point key="canvasLocation" x="166.5" y="82.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qgy-qx-zoX">
@@ -85,7 +85,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-B8-6Jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-389" y="331"/>
+            <point key="canvasLocation" x="-345" y="102"/>
         </scene>
         <!--CollectionView Controller-->
         <scene sceneID="ox2-dN-iE1">

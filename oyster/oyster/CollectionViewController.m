@@ -4,13 +4,7 @@
 //
 
 #import "CollectionViewController.h"
-//#import "OysterAdType.h"
-//#import "OysterAdLoader.h"
-//#import "OysterContentAdView.h"
-//#import "OysterAdImage.h";
-//#import "OysterContentAd.h"
 #import "OysterContentAdCell.h"
-@import Oyster;
 
 @interface CollectionViewController()<OysterContentAdLoaderDelegate>
 

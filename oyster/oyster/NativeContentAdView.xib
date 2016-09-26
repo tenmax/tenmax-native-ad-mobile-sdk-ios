@@ -48,7 +48,7 @@
                         <constraint firstAttribute="height" constant="30" id="iH7-g5-Wx3"/>
                         <constraint firstAttribute="width" constant="108" id="w4o-3X-2KG"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="CallToAction"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,7 +78,7 @@
                 <outlet property="imageView" destination="tYV-3h-p0P" id="d7r-tJ-cjn"/>
                 <outlet property="logoView" destination="b7l-GF-JB9" id="4ct-y3-tg9"/>
             </connections>
-            <point key="canvasLocation" x="327" y="198"/>
+            <point key="canvasLocation" x="1031" y="-18"/>
         </view>
     </objects>
 </document>
