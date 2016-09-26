@@ -1,0 +1,6 @@
+framework module Oyster {
+  umbrella header "Oyster.h"
+
+  export *
+  module * { export * }
+}

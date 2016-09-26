@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jam-eh-Grq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EE-gp-5Se">
+                                <rect key="frame" x="16" y="400" width="77" height="30"/>
+                                <state key="normal" title="Reload Ads"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Up9-dI-Jeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-V1-JKU" userLabel="next">
+                                <rect key="frame" x="259" y="400" width="104" height="30"/>
+                                <state key="normal" title="Next Controller"/>
+                                <connections>
+                                    <segue destination="M7O-gx-H8W" kind="show" id="Qff-OU-iqq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJN-eT-4dy" customClass="OysterAdView">
+                                <rect key="frame" x="16" y="617" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hgh-8p-4ZD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-Sm-PhZ">
+                                <rect key="frame" x="16" y="64" width="343" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="xxD-sk-C3D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9EE-gp-5Se" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5zF-Ud-oY7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9EE-gp-5Se" secondAttribute="bottom" constant="237" id="6OY-CC-jd2"/>
+                            <constraint firstItem="GE6-Sm-PhZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6nW-oL-5pn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yJN-eT-4dy" secondAttribute="bottom" id="Afi-M1-d4R"/>
+                            <constraint firstItem="yJN-eT-4dy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JdC-yj-0XQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7dS-V1-JKU" secondAttribute="bottom" constant="237" id="LPC-cp-UOV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yJN-eT-4dy" secondAttribute="trailing" id="OIO-FE-clk"/>
+                            <constraint firstItem="GE6-Sm-PhZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SdJ-rY-ATq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GE6-Sm-PhZ" secondAttribute="trailing" id="aP0-gj-krO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7dS-V1-JKU" secondAttribute="trailing" constant="-4" id="fhc-0y-I9A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zvq-vu-0BC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nativeAdPlaceholder" destination="GE6-Sm-PhZ" id="WNf-xK-YFz"/>
+                        <outlet property="oysterAdView" destination="yJN-eT-4dy" id="zj9-nY-CK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.5" y="82.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qgy-qx-zoX">
+            <objects>
+                <navigationController id="Jam-eh-Grq" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rRV-ku-RQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EUr-CC-1Tx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-B8-6Jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="102"/>
+        </scene>
+        <!--CollectionView Controller-->
+        <scene sceneID="ox2-dN-iE1">
+            <objects>
+                <collectionViewController id="M7O-gx-H8W" userLabel="CollectionView Controller" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iVW-xd-8Fy">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E6o-gw-d4x">
+                            <size key="itemSize" width="320" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="RV6-MB-KOx">
+                                <rect key="frame" x="28" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cell number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-5R-Ivp">
+                                            <rect key="frame" x="115" y="89" width="90" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kbv-5R-Ivp" firstAttribute="centerY" secondItem="RV6-MB-KOx" secondAttribute="centerY" id="3f4-mV-Xg1"/>
+                                    <constraint firstItem="Kbv-5R-Ivp" firstAttribute="centerX" secondItem="RV6-MB-KOx" secondAttribute="centerX" id="WWu-xR-CYD"/>
+                                </constraints>
+                                <size key="customSize" width="320" height="200"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="M7O-gx-H8W" id="kJo-7T-ZsM"/>
+                            <outlet property="delegate" destination="M7O-gx-H8W" id="T6n-zF-Gx6"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="hkF-Zt-fC0"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e74-1S-iOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.5" y="223.5"/>
+        </scene>
+    </scenes>
+</document>
