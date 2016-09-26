@@ -63,7 +63,7 @@
 		4A14EFC21D66F7AB004781A4 = {
 			isa = PBXGroup;
 			children = (
-				4A14EFCD1D66F7AB004781A4 /* sample */,
+				4A14EFCD1D66F7AB004781A4 /* oyster */,
 				4A14EFCC1D66F7AB004781A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A14EFCD1D66F7AB004781A4 /* sample */ = {
+		4A14EFCD1D66F7AB004781A4 /* oyster */ = {
 			isa = PBXGroup;
 			children = (
 				4A14EFD11D66F7AB004781A4 /* AppDelegate.h */,
@@ -94,7 +94,6 @@
 				1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */,
 				1A294BAC8A41CC3B8AAB28BD /* OysterContentAdCell.h */,
 			);
-			name = sample;
 			path = oyster;
 			sourceTree = "<group>";
 		};
