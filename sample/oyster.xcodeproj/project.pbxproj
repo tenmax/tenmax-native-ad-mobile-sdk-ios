@@ -16,6 +16,7 @@
 		4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDA1D66F7AB004781A4 /* Assets.xcassets */; };
 		4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDC1D66F7AB004781A4 /* LaunchScreen.storyboard */; };
 		4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */; };
+		6B0A369D076ED944670FD059 /* libPods-oyster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D25065738748157EF2DB96 /* libPods-oyster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
+		99D25065738748157EF2DB96 /* libPods-oyster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oyster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0A369D076ED944670FD059 /* libPods-oyster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		31DFD316AD169B97D1A3E54A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99D25065738748157EF2DB96 /* libPods-oyster.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
