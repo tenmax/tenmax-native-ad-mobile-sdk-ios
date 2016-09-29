@@ -6,6 +6,6 @@ target 'oyster' do
   # use_frameworks!
 
   # Pods for oyster
-  pod 'tenmax-native-ad-mobile-sdk-ios','~> 1.0.7'
+  pod 'tenmax-native-ad-mobile-sdk-ios','~> 1.0.8'
 
 end

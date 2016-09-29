@@ -16,7 +16,6 @@
 		4A14EFDB1D66F7AB004781A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDA1D66F7AB004781A4 /* Assets.xcassets */; };
 		4A14EFDE1D66F7AB004781A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFDC1D66F7AB004781A4 /* LaunchScreen.storyboard */; };
 		4A14EFE61D66F7CA004781A4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */; };
-		6B0A369D076ED944670FD059 /* libPods-oyster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D25065738748157EF2DB96 /* libPods-oyster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +49,8 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
+		4A7B8BFA1D9CFE8F00BB50EE /* Oyster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Oyster.framework; path = "Pods/tenmax-native-ad-mobile-sdk-ios/Oyster.framework"; sourceTree = "<group>"; };
+		4A7B8BFC1D9CFEB000BB50EE /* libPods-oyster.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-oyster.a"; path = "../../../../Library/Developer/Xcode/DerivedData/oyster-hihkrvjxqltypggvkolpqxiawbyl/Build/Products/Debug-iphonesimulator/libPods-oyster.a"; sourceTree = "<group>"; };
 		99D25065738748157EF2DB96 /* libPods-oyster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oyster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B0A369D076ED944670FD059 /* libPods-oyster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +77,8 @@
 		31DFD316AD169B97D1A3E54A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B8BFC1D9CFEB000BB50EE /* libPods-oyster.a */,
+				4A7B8BFA1D9CFE8F00BB50EE /* Oyster.framework */,
 				99D25065738748157EF2DB96 /* libPods-oyster.a */,
 			);
 			name = Frameworks;
@@ -382,6 +384,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/oyster",
+					"$(PROJECT_DIR)/Pods/tenmax-native-ad-mobile-sdk-ios",
 				);
 				INFOPLIST_FILE = oyster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -411,6 +414,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/oyster",
+					"$(PROJECT_DIR)/Pods/tenmax-native-ad-mobile-sdk-ios",
 				);
 				INFOPLIST_FILE = oyster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
