@@ -1,12 +1,12 @@
 PODS:
-  - tenmax-native-ad-mobile-sdk-ios (1.0.5)
+  - tenmax-native-ad-mobile-sdk-ios (1.0.6)
 
 DEPENDENCIES:
-  - tenmax-native-ad-mobile-sdk-ios (~> 1.0.5)
+  - tenmax-native-ad-mobile-sdk-ios (~> 1.0.6)
 
 SPEC CHECKSUMS:
-  tenmax-native-ad-mobile-sdk-ios: dcf6fb7387a3473094d402df66b52b538f098788
+  tenmax-native-ad-mobile-sdk-ios: 6b744a77929b7d9443323f26c99f897cbe6d6e27
 
-PODFILE CHECKSUM: 33d01b57953830405715e5b1d57bec2e8a517498
+PODFILE CHECKSUM: b9f35f306337eeeb661c44bedbd5378267f99b4c
 
 COCOAPODS: 1.0.1

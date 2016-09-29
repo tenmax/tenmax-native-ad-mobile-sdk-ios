@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C063583F6F963E4E515874 /* libPods-oyster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6370B8EB85884A75B3C8FD /* libPods-oyster.a */; };
 		1A294302F589699D797A3D21 /* OysterContentAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294989F9245F25C0FBEE7F /* OysterContentAdCell.m */; };
 		1A294CB43949A7BDE4621B50 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A294DE99C495A7B000D3758 /* CollectionViewController.m */; };
 		4A14EFD01D66F7AB004781A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A14EFCF1D66F7AB004781A4 /* main.m */; };
@@ -50,8 +49,6 @@
 		4A14EFDD1D66F7AB004781A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A14EFDF1D66F7AB004781A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A14EFE51D66F7CA004781A4 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
-		4A9C86011D9CCE2C0012383D /* libPods-oyster.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-oyster.a"; path = "Pods/../build/Debug-iphoneos/libPods-oyster.a"; sourceTree = "<group>"; };
-		9D6370B8EB85884A75B3C8FD /* libPods-oyster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oyster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C063583F6F963E4E515874 /* libPods-oyster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +74,6 @@
 		31DFD316AD169B97D1A3E54A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A9C86011D9CCE2C0012383D /* libPods-oyster.a */,
-				9D6370B8EB85884A75B3C8FD /* libPods-oyster.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

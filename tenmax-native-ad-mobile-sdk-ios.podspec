@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "tenmax-native-ad-mobile-sdk-ios"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "AD sdk for Tenmax."
 
   # This description is used to generate tags and improve search results.
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source       = { :git => "https://github.com/tenmax/tenmax-native-ad-mobile-sdk-ios.git", :tag => "1.0.5" }
+  s.source       = { :git => "https://github.com/tenmax/tenmax-native-ad-mobile-sdk-ios.git", :tag => "1.0.6" }
 
 
 
