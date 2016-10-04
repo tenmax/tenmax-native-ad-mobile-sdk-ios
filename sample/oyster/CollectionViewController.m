@@ -40,7 +40,7 @@
   options.imageSize = MIDDLE;
 
   OysterAdLoader* adLoader = [[OysterAdLoader alloc]
-      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:options];
+      initWithAdUnitID:@"OYSTER_AD_UNIT_ID" rootViewController:self adTypes:adType options:options];
 
   adLoader.delegate = self;
   [adLoader loadRequest];

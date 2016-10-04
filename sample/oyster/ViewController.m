@@ -33,14 +33,14 @@
   options.imageSize = MIDDLE;
 
   self.adLoader = [[OysterAdLoader alloc]
-      initWithAdUnitID:@"c145f1cd389e49a5" rootViewController:self adTypes:adType options:options];
+      initWithAdUnitID:@"OYSTER_AD_UNIT_ID" rootViewController:self adTypes:adType options:options];
 
   self.adLoader.delegate = self;
   [self.adLoader loadRequest];
 }
 
 - (void) loadBanner {
-  self.oysterAdView.adUnitID = @"c145f1cd389e49a5";
+  self.oysterAdView.adUnitID = @"OYSTER_AD_UNIT_ID";
   self.oysterAdView.rootViewController = self;
 
   [self.oysterAdView loadAds];
