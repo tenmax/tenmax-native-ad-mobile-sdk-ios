@@ -1,6 +1,6 @@
 
 # Prerequisites
-- Deployment target 至少 8.0 以上
+- iOS deployment target 至少 8.0 以上
 - 從tenmax取得一個唯一廣告識別碼
 
 # 步驟 1.Cocoapods環境建立
